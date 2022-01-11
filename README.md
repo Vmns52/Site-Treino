@@ -1,2 +1,2 @@
 # Site-Treino
-Site q uso para treinar
+Site q uso para praticar
