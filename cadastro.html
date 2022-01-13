@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <meta charset="utf-8">
+    <title>
+        Cadastro de cliente
+    </title>
+</head>
+<body>
+    <div>
+        <ul >
+            <li><a href="index.html" >Home</a></li>
+            <li><a class= "active" href="cadastro.html">Cadastro</a> </a></li>
+            <li><a href="index.html" >Novidades</a></li>
+            <li><a href="index.html" >Quem Somos</a></li>
+            <li><a href="index.html" >Contato</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1 id="titulo-cadastro">Cadastro</h1>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo-cadasro">
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" nome="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <br>
+                <label for="usuario"><strong>Usuario:</strong></label>
+                <input type="text" nome="usuario" id="usuario" required>
+            </div>
+            <div class="campo">
+                <br>
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="email" name="email" id="email" required>
+                
+            </div>
+            <div class="campo">
+                <br>
+                <label for="senha"><strong>Senha:</strong></label>
+                <input type="password" name="senha" id="senha" required>
+                <br>
+                <br>
+                <label for="confirma-senha"><strong>Confirme a senha:</strong></label>
+                <input type="password" name="senha" id="confirma-senha" required>
+            </div>
+            <div>
+                <br>
+                <button type="submit" class="botao-cadastrar">Cadastrar</button>
+            </div>
+        </fieldset>
+
+    </form>
+
+<script>
+    var password = document.getElementById("senha")
+  , confirm_password = document.getElementById("confirma-senha");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Senhas diferentes!");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+</script>
+</body>
+</html>
