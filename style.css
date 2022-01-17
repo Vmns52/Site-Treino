@@ -1,10 +1,12 @@
 /*corpo do site*/
 body{
-    background-color:rgb(119, 119, 119);
+    background: linear-gradient(to bottom left, #33cc33 0%, #003300 100%) no-repeat;
     font-family: sans-serif;
     font-size: 1em;
     color:#000;
     justify-content: center;
+
+
 }
 
 /*menu*/
@@ -40,7 +42,7 @@ li a:hover:not(.active){
 /* tela cadastro*/
 #titulo-cadastro{
     font-family: sans-serif;
-    color:#07ce85;
+    color:#fff;
     margin-left: 38%;
     margin-top: 2%;
 }
@@ -53,6 +55,7 @@ fieldset{
 
 .campo{
     margin-bottom: 1em;
+    
 }
 
 .campo label{
